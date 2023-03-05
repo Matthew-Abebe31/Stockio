@@ -89,19 +89,11 @@ canvas#dailyPriceChart {
   display: block;
   box-sizing: border-box;
   margin: 0 auto;
-  height: 350px;
-  width: 350px;
+  height: 400px;
+  width: 400px;
   margin-top: 20px;
   margin-bottom: 20px;
   border: solid 1px navy;
-}
-
-canvas#intraDayPriceChart {
-  display: block;
-  box-sizing: border-box;
-  margin: 0 auto;
-  height: 350px;
-  width: 350px;
 }
 
 .find-button {
