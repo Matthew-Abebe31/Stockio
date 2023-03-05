@@ -23,7 +23,7 @@ A dynamic JavaScript application that displays charts and financial ratios of eq
 
 <h4>Live Demo</h4>
 
-Try the application live at https://matthew-abebe.github.io/Stockio/
+Try the application live at https://matthew-abebe31.github.io/Stockio/
 
 <h4>Installation</h4>
 
