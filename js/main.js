@@ -76,7 +76,7 @@ function handleFindClick(event) {
 
 const autoCompleteJS = new autoComplete({
   selector: '#autoComplete',
-  placeHolder: 'Search for company by symbol...',
+  placeHolder: 'Enter a stock ticker...',
   data: {
     src: function (query) {
       return fetch(`https://www.alphavantage.co/query?function=SYMBOL_SEARCH&keywords=${keywords}&apikey=EBZ2O8GQQ9CA3ECX`)
@@ -134,19 +134,19 @@ function getOverviewData(symbol) {
 
     var profileDataEl = document.querySelector('.profile-data');
 
-    var symbolEl = document.createElement('li');
-    var symbolLabel = document.createElement('strong');
-    var symbolData = document.createElement('span');
-    profileDataEl.appendChild(symbolEl);
-    symbolEl.appendChild(symbolLabel);
-    symbolEl.appendChild(symbolData);
-    symbolLabel.textContent = 'Symbol: ';
+    // var symbolEl = document.createElement('li');
+    // var symbolLabel = document.createElement('strong');
+    // var symbolData = document.createElement('span');
+    // profileDataEl.appendChild(symbolEl);
+    // symbolEl.appendChild(symbolLabel);
+    // symbolEl.appendChild(symbolData);
+    // symbolLabel.textContent = 'Symbol: ';
 
-    if (xhrOverview.response.Symbol === undefined || xhrOverview.response.Symbol === 'None') {
-      symbolData.textContent = 'N/A';
-    } else {
-      symbolData.textContent = xhrOverview.response.Symbol;
-    }
+    // if (xhrOverview.response.Symbol === undefined || xhrOverview.response.Symbol === 'None') {
+    //   symbolData.textContent = 'N/A';
+    // } else {
+    //   symbolData.textContent = xhrOverview.response.Symbol;
+    // }
 
     var stockNameEl = document.createElement('li');
     var stockNameLabel = document.createElement('strong');
