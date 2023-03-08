@@ -28,6 +28,10 @@ h1 {
   color: white;
 }
 
+h1.header {
+  cursor: pointer;
+}
+
 h2 {
   text-align: center;
   margin-top: 15px;

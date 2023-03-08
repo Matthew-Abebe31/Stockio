@@ -1,6 +1,7 @@
-var headerButton = document.querySelector('.header-button');
+// var headerButton = document.querySelector('.header-button');
+var header = document.querySelector('.header')
 
-headerButton.addEventListener('click', handleHeaderClick);
+header.addEventListener('click', handleHeaderClick);
 
 function handleHeaderClick() {
   location.reload();
