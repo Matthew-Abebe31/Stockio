@@ -1,23 +1,26 @@
-html,
 body {
-  height: 100vh;
-}
-
-@media only screen and (min-width: 805px) {
-  html,
-  body {
-    height: 100vh;
-  }
-}
-
-.col-full {
-  width: 100%;
+  position: relative;
+  min-height: 100%;
 }
 
 .row {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.col-full {
+  width: 100%;
+}
+
+.header-button-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+header {
+  height: 80px;
+  background-color: navy;
 }
 
 .home-container {
@@ -53,4 +56,25 @@ body {
 
 .choose-views-container {
   width: 100%;
+}
+
+.footer-button-container {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+}
+
+footer {
+  background-color: navy;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 75px;
+}
+
+@media only screen and (min-width: 805px) {
+  html,
+  body {
+    height: 100vh;
+  }
 }
